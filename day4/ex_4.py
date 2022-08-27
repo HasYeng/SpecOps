@@ -1,7 +1,8 @@
-lst = [1, 2, 3, 4]
-lst_evens = []
+lst = [3,1,2,4,1]
+lst_evens, lst_odds = [], []
 for i in lst:
     if i % 2 == 0:
         lst_evens.append(i)
-        lst.remove(i)
-print(lst_evens + lst)
+    else:
+        lst_odds.append(i)
+print(lst_evens+lst_odds)
