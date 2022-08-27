@@ -1,6 +1,6 @@
 def sumOfUnique(nums):
     sum_of_uniques = 0
-    for i in nums:
+    for i in set(nums):
         if nums.count(i) == 1:
             sum_of_uniques += i
     return sum_of_uniques
