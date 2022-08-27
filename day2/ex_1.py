@@ -1,5 +1,7 @@
-def strmove(string, num):
+def str_move(string, num):
     move = num % len(string)
     new_str = string[-move::] + string[:-move:]
     return new_str
-strmove("hello", 7)
+
+
+print(str_move("hello", 7))
