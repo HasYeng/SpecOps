@@ -3,7 +3,7 @@ def selection_sort(lst):
         min_i = i
         for j in range(i + 1, len(lst)):
             if lst[min_i] > lst[j]:
-                min_idx = j
+                min_i = j
         lst[i], lst[min_i] = lst[min_i], lst[i]
     return lst
 
