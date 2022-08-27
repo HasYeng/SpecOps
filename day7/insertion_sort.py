@@ -1,7 +1,11 @@
 def insertion_sort(lst):
     for i in range(1, len(lst)):
-        while lst[i - 1] > lst[i] and i > 0:
-            lst[i - 1], lst[i] = lst[i], lst[i - 1]
-            i -= 1
+        j = i
+        while lst[j] < lst[j-1] and j > 0:
+            lst[j], lst[j - 1] = lst[j - 1], lst[j]
+            j -= 1
     return lst
-print(insertion_sort([3, 5, 4, 16, 1, 33]))
+
+
+print(insertion_sort([3, 5, 99, 78, 4, 16, 17, 3]))
+
